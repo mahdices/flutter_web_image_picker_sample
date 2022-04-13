@@ -222,62 +222,29 @@ class _CreateCoursePageState extends State<CreateCoursePage>
                             SizedBox(
                               height: 16,
                             ),
-                            Row(
-                              children: [
-                                Expanded(
-                                  child: SizedBox(
-                                    height: 50,
-                                    child: ElevatedButton(
-                                      style: ElevatedButton.styleFrom(
-                                          primary: Colors.amber,
-                                          padding: const EdgeInsets.symmetric(
-                                              horizontal: 16, vertical: 6),
-                                          shape: RoundedRectangleBorder(
-                                              borderRadius: BorderRadius.all(
-                                                  Radius.circular(8)))),
-                                      onPressed: () {},
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: [
-                                          Icon(Icons.edit),
-                                          SizedBox(
-                                            width: 8,
-                                          ),
-                                          Text("ویرایش")
-                                        ],
-                                      ),
+                            SizedBox(
+                              height: 50,
+                              width: double.infinity,
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                    primary: Colors.green,
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 16, vertical: 6),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(8)))),
+                                onPressed: () {},
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(Icons.done),
+                                    SizedBox(
+                                      width: 8,
                                     ),
-                                  ),
+                                    Text("ثبت")
+                                  ],
                                 ),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Expanded(
-                                  child: SizedBox(
-                                    height: 50,
-                                    child: ElevatedButton(
-                                      style: ElevatedButton.styleFrom(
-                                          primary: Colors.red,
-                                          padding: const EdgeInsets.symmetric(
-                                              horizontal: 16, vertical: 6),
-                                          shape: RoundedRectangleBorder(
-                                              borderRadius: BorderRadius.all(
-                                                  Radius.circular(8)))),
-                                      onPressed: () {},
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: [
-                                          Icon(Icons.delete),
-                                          SizedBox(
-                                            width: 8,
-                                          ),
-                                          Text("حذف")
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                )
-                              ],
+                              ),
                             ),
                           ],
                         ),
